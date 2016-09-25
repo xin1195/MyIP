@@ -4,5 +4,6 @@ from api.controller.getIpHandler import ApiGetIpHandler
 
 api_urls = [
 
+    (r"/", ApiGetIpHandler),                                            # 获取请求客户端的外网ip
     (r"/api/get_ip", ApiGetIpHandler),                                            # 获取请求客户端的外网ip
 ]
